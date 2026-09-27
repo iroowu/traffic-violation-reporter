@@ -1,0 +1,1500 @@
+[
+  {
+    "id": "red_light",
+    "name": "闖紅燈",
+    "article": "第53條第1項",
+    "article_short": "53-1",
+    "reporting_basis": "第7條之1第1項第12款",
+    "reportable": true,
+    "fine": "1,800 至 5,400 元；基準表期限內繳納：機車 1,800、小型車 2,700、大型車 3,600、載運危險物品車輛 5,400",
+    "fine_min": 1800,
+    "fine_max": 5400,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "同向紅燈號誌與車輛越過停止線同框",
+      "停止線（若紅燈有倒數讀秒能證明時間點，可不拍停止線）",
+      "車輛在紅燈時越過停止線並駛入路口的連續畫面",
+      "車牌清晰",
+      "日期時間",
+      "影片或至少 2 張以上照片"
+    ],
+    "common_rejections": [
+      "車牌模糊",
+      "未拍到闖越停止線前號誌已轉為紅燈的畫面",
+      "只拍到對向或他向綠燈、拍不到同向紅燈",
+      "影片剪接過或非原始檔",
+      "時間地點寫不清",
+      "只是車頭越過停止線但沒進路口，不算闖紅燈（屬第60條第2項第3款）",
+      "前懸伸越停止線但前輪未超越，屬可勸導情形（細則第12條，準用民眾檢舉案件）"
+    ],
+    "option_keywords": [
+      "闖紅燈",
+      "交岔路口闖紅燈",
+      "闖紅燈/紅燈右轉"
+    ],
+    "notes": "2022、2023、2024 三個版本都可檢舉。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=53",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C",
+      "https://app2.ntpd.gov.tw/Info/ImageReport",
+      "https://policemail.kcg.gov.tw/Statement.aspx",
+      "https://www.sanchong.police.ntpc.gov.tw/fp-440-22903-17.html",
+      "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080029&flno=12"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "red_light_right_turn",
+    "name": "紅燈右轉",
+    "article": "第53條第2項",
+    "article_short": "53-2",
+    "reporting_basis": "第7條之1第1項第12款",
+    "reportable": true,
+    "fine": "600 至 1,800 元；基準表：機車或小型車 600、大型車 1,400",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "同向紅燈號誌與車輛同框",
+      "停止線",
+      "車輛在紅燈時右轉的連續畫面",
+      "車牌清晰",
+      "日期時間"
+    ],
+    "common_rejections": [
+      "車牌模糊",
+      "未拍到號誌已轉為紅燈的畫面",
+      "只拍到他向綠燈、拍不到同向紅燈",
+      "影片剪接過或非原始檔"
+    ],
+    "option_keywords": [
+      "紅燈右轉",
+      "闖紅燈/紅燈右轉"
+    ],
+    "notes": "第53條整條都在清單，含紅燈右轉。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=53",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "no_turn_signal",
+    "name": "變換車道或轉彎未打方向燈",
+    "article": "第42條（配合道路交通安全規則第109條第2項）",
+    "article_short": "42",
+    "reporting_basis": "第7條之1第1項第5款",
+    "reportable": true,
+    "fine": "1,200 至 3,600 元；基準表：方向燈類（安全規則第109條第2項）不分車種 1,200",
+    "fine_min": 1200,
+    "fine_max": 3600,
+    "vehicle": "汽車／機車皆適用（基準表不分車種）",
+    "evidence": [
+      "變換車道或轉彎前、中、後的連續畫面",
+      "看得出方向燈沒亮，或未顯示至完成變換車道",
+      "方向燈位置未被遮住或反光",
+      "車牌清晰",
+      "影片或 2 張以上照片"
+    ],
+    "common_rejections": [
+      "車牌不清",
+      "只拍到一瞬間、看不出全程",
+      "逆光或夜間看不出方向燈有沒有亮",
+      "已經在變換車道中途才開始錄"
+    ],
+    "option_keywords": [
+      "不依規定使用燈光",
+      "方向燈",
+      "不依規定使用燈光(如方向燈)"
+    ],
+    "notes": "2024 年「1,200 元以下不得檢舉」的限縮不影響它，因為第42條上限 3,600。安全規則第109條第2項第2款：變換車道時應先顯示欲變換車道方向之燈光，並應顯示至完成轉彎或變換車道之行為。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=42",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040013&flno=109",
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C",
+      "https://168.motc.gov.tw/theme/news/post/1911011450759",
+      "https://app2.ntpd.gov.tw/Info/ImageReport"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "not_yielding_pedestrian",
+    "name": "不停讓行人",
+    "article": "第44條第2項",
+    "article_short": "44-2",
+    "reporting_basis": "第7條之1第1項第7款",
+    "reportable": true,
+    "fine": "1,200 至 6,000 元；基準表：機車 1,200、汽車 6,000；一年內二次以上一律 6,000；因而肇事致人受傷 18,000 至 36,000 並吊扣駕照一至二年",
+    "fine_min": 1200,
+    "fine_max": 6000,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "行人已踏上行人穿越道或正在穿越",
+      "車頭進入穿越道時與行人距離不足一個車道寬（約 3 公尺）；機車、慢車以前輪進入穿越道為準",
+      "車輛未停下就通過",
+      "車牌清晰",
+      "最好從側面或後方拍，同時看到行人位置與車頭位置"
+    ],
+    "common_rejections": [
+      "行人還在路邊尚未踏上穿越道",
+      "行人在對向遠處（超過一個車道寬）",
+      "角度看不出距離",
+      "車牌不清"
+    ],
+    "option_keywords": [
+      "車輛不暫停讓行人",
+      "不暫停讓行人",
+      "讓行人",
+      "不停讓行人"
+    ],
+    "notes": "2023 年 6 月 30 日起上限從 3,600 提高到 6,000。認定標準為警政署 2023-05-02 公布。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=44",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C",
+      "https://www.cna.com.tw/news/asoc/202305020282.aspx",
+      "https://news.pts.org.tw/article/641854"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "not_yielding_visually_impaired",
+    "name": "不停讓攜帶白手杖或導盲犬之視障者",
+    "article": "第44條第3項",
+    "article_short": "44-3",
+    "reporting_basis": "第7條之1第1項第7款",
+    "reportable": true,
+    "fine": "2,400 至 7,200 元；基準表：機車 2,400、汽車 7,200",
+    "fine_min": 2400,
+    "fine_max": 7200,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "視障者攜帶白手杖或導盲犬（條文要件）",
+      "車輛行近行人穿越道或路口未暫停先讓通過",
+      "車牌清晰",
+      "日期時間"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "視覺功能障礙",
+      "視障",
+      "白手杖",
+      "導盲犬"
+    ],
+    "notes": "evidence 依條文要件列出，報告未列此項專屬官方證據要求。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=44",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C"
+    ],
+    "gaps": [
+      "common_rejections：報告未列此項專屬退件案例",
+      "evidence：報告未列專屬官方要件，僅依條文要件列出"
+    ]
+  },
+  {
+    "id": "no_slowdown_unsignalized_crosswalk",
+    "name": "行近未設號誌之行人穿越道不減速",
+    "article": "第44條第1項第2款",
+    "article_short": "44-1-2",
+    "reporting_basis": "第7條之1第1項第7款",
+    "reportable": true,
+    "fine": "600 至 1,800 元（第44條第1項法定範圍）；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "不減速慢行",
+      "行近行人穿越道不減速",
+      "未設行車管制號誌之行人穿越道"
+    ],
+    "notes": "2023 年 6 月 30 日版起加入可檢舉清單。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=44",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列專屬要件",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "snake_driving",
+    "name": "蛇行、危險駕駛",
+    "article": "第43條第1項第1款",
+    "article_short": "43-1-1",
+    "reporting_basis": "第7條之1第1項第6款",
+    "reportable": true,
+    "fine": "6,000 至 36,000 元，並當場禁止駕駛；基準表：機車 12,000、汽車 18,000，一年內二次以上 24,000；另依第43條第4項吊扣該汽車牌照六個月",
+    "fine_min": 6000,
+    "fine_max": 36000,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "沿途持續、反覆左右穿梭的連續畫面（不是一兩次變換車道）",
+      "車牌清晰",
+      "時間地點"
+    ],
+    "common_rejections": [
+      "只拍到一兩次變換車道，警方認定不構成「蛇行」而改以第48條或第60條較輕條款處理，或不成立",
+      "車牌不清",
+      "影片太短看不出連續性"
+    ],
+    "option_keywords": [
+      "危險駕駛(蛇行)",
+      "蛇行",
+      "危險駕駛",
+      "危險方式駕車"
+    ],
+    "notes": "法院見解（推測供參考，非現行官方檢舉要件）：基隆地院 2014 年判決認為連續三次變換車道但距離僅三百公尺，與「沿途蛇行」不同，撤銷處分。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=43",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C",
+      "https://www.lawbank.com.tw/news/NewsContent.aspx?NID=119552",
+      "https://www.police.ntpc.gov.tw/cp-3509-2005-1.html"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "tailgating_forcing_yield",
+    "name": "逼車（迫近、驟然變換車道迫使他車讓道）",
+    "article": "第43條第1項第3款",
+    "article_short": "43-1-3",
+    "reporting_basis": "第7條之1第1項第6款",
+    "reportable": true,
+    "fine": "6,000 至 36,000 元，並當場禁止駕駛；基準表：機車 16,000、汽車 24,000；另依第43條第4項吊扣該汽車牌照六個月",
+    "fine_min": 6000,
+    "fine_max": 36000,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "迫近、切入的連續畫面",
+      "車牌清晰",
+      "時間地點"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "逼車",
+      "迫使他車讓道",
+      "迫近",
+      "驟然變換車道"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=43",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C",
+      "https://www.npa.gov.tw/ch/app/faq/view?module=faq&id=2144&serno=A1078875"
+    ],
+    "gaps": [
+      "common_rejections：報告未列此項專屬退件案例"
+    ]
+  },
+  {
+    "id": "sudden_braking",
+    "name": "任意驟然減速、煞車或於車道中暫停",
+    "article": "第43條第1項第4款",
+    "article_short": "43-1-4",
+    "reporting_basis": "第7條之1第1項第6款",
+    "reportable": true,
+    "fine": "6,000 至 36,000 元，並當場禁止駕駛；基準表：機車 16,000 起（汽車金額報告未列）",
+    "fine_min": 6000,
+    "fine_max": 36000,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "非遇突發狀況而在行駛途中任意驟然減速、煞車或於車道中暫停的連續畫面（條文要件）",
+      "車牌清晰",
+      "時間地點"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "驟然減速",
+      "任意煞車",
+      "急煞",
+      "車道中暫停"
+    ],
+    "notes": "evidence 依條文要件列出，報告未列此項專屬官方證據要求。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=43",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C"
+    ],
+    "gaps": [
+      "fine：基準表汽車金額報告未列",
+      "evidence：報告未列專屬官方要件，僅依條文要件列出",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "street_racing",
+    "name": "二輛以上共同危險駕駛、競駛、競技",
+    "article": "第43條第3項",
+    "article_short": "43-3",
+    "reporting_basis": "第7條之1第1項第6款",
+    "reportable": true,
+    "fine": "30,000 至 90,000 元，並當場禁止駕駛及吊銷駕照",
+    "fine_min": 30000,
+    "fine_max": 90000,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "二車以上競駛競技",
+      "競駛",
+      "競技",
+      "共同危險駕駛"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=43",
+    "references": [],
+    "gaps": [
+      "vehicle：報告未區分車種",
+      "evidence：報告未列專屬要件",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "parking_sidewalk_crosswalk",
+    "name": "四輪以上汽車停在人行道或行人穿越道（騎樓除外）",
+    "article": "第56條第1項第1款",
+    "article_short": "56-1-1",
+    "reporting_basis": "第7條之1第1項第16款（但機車及騎樓不在此限）",
+    "reportable": true,
+    "fine": "600 至 1,200 元；基準表：機車 600、小型車 900、大型車 1,200（機車不可檢舉，機車金額僅供對照）",
+    "fine_min": 600,
+    "fine_max": 1200,
+    "vehicle": "四輪以上汽車（機車及騎樓不在可檢舉範圍）",
+    "evidence": [
+      "車牌清晰",
+      "人行道或行人穿越道標線入鏡",
+      "車輛前、後各一張",
+      "駕駛座（辨識駕駛人是否在場，分辨臨停或停車）"
+    ],
+    "common_rejections": [
+      "違停只拍 1 張照片且難以辨認是行駛或靜止",
+      "沒拍到駕駛座（分不出臨停還是停車）",
+      "沒拍到標線",
+      "違規時間與行車紀錄器時間不符",
+      "機車停人行道不能檢舉",
+      "任何車停騎樓不能檢舉",
+      "深夜零至六時停車屬可勸導情形（但妨礙其他人車通行經人檢舉者不在此限）"
+    ],
+    "option_keywords": [
+      "人行道及行人穿越道停車",
+      "人行道",
+      "行人穿越道",
+      "在人行道、行人穿越道停車"
+    ],
+    "notes": "2024 年 6 月 30 日起紅線一般路段、黃線、路口 10 公尺內、公車站、消防出入口等違停皆不可檢舉，只能打 110。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=56",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C",
+      "https://traffic.chpb.gov.tw/",
+      "https://tra.hccp.gov.tw/hsin/cases/statement",
+      "https://www.sanchong.police.ntpc.gov.tw/fp-440-22903-17.html",
+      "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080029&flno=12",
+      "https://www.cna.com.tw/news/ahel/202406280052.aspx"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "temp_parking_sidewalk_crosswalk",
+    "name": "四輪以上汽車在人行道或行人穿越道臨時停車（騎樓除外）",
+    "article": "第55條第1項第1款",
+    "article_short": "55-1-1",
+    "reporting_basis": "第7條之1第1項第14款（但機車及騎樓不在此限）",
+    "reportable": true,
+    "fine": "300 至 600 元；基準表：汽車 600",
+    "fine_min": 300,
+    "fine_max": 600,
+    "vehicle": "四輪以上汽車（機車及騎樓不在可檢舉範圍）",
+    "evidence": [
+      "車牌清晰",
+      "人行道或行人穿越道標線入鏡",
+      "駕駛座（駕駛人在場即屬臨時停車）",
+      "車輛前、後各一張"
+    ],
+    "common_rejections": [
+      "只拍 1 張照片且難以辨認是行駛或靜止",
+      "沒拍到駕駛座",
+      "沒拍到標線",
+      "違規時間與拍攝時間不符"
+    ],
+    "option_keywords": [
+      "在人行道、行人穿越道臨時停車",
+      "臨時停車",
+      "人行道",
+      "行人穿越道"
+    ],
+    "notes": "2024 年保留的 5 項輕微違規之一。路口 10 公尺、公車站 10 公尺、消防出入口 5 公尺內臨停（第55條第1項第2款）已不可檢舉。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=55",
+    "references": [
+      "https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=33324&pid=240917"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "temp_parking_wrong_direction",
+    "name": "不依順行方向臨時停車（逆向臨停）",
+    "article": "第55條第1項第4款",
+    "article_short": "55-1-4",
+    "reporting_basis": "第7條之1第1項第15款",
+    "reportable": true,
+    "fine": "300 至 600 元；基準表：300",
+    "fine_min": 300,
+    "fine_max": 600,
+    "vehicle": null,
+    "evidence": [
+      "車牌清晰",
+      "駕駛座（辨識臨停狀態）",
+      "違規事實（停放方向與車流方向相反）"
+    ],
+    "common_rejections": [
+      "只拍 1 張照片且難以辨認是行駛或靜止",
+      "沒拍到駕駛座",
+      "違規時間與拍攝時間不符"
+    ],
+    "option_keywords": [
+      "不依順行之方向臨時停車",
+      "順行方向",
+      "逆向臨時停車",
+      "逆向停車"
+    ],
+    "notes": "2024 年保留的 5 項輕微違規之一。同款的「併排臨時停車」2024 年起不可檢舉。evidence 套用違停通用官方要求，報告未列此項專屬要件。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=55",
+    "references": [
+      "https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=33324&pid=240917"
+    ],
+    "gaps": [
+      "vehicle：報告未區分車種",
+      "evidence：報告未列專屬要件，套用違停通用要求"
+    ]
+  },
+  {
+    "id": "disabled_parking_space",
+    "name": "占用身心障礙專用停車位",
+    "article": "第56條第1項第10款",
+    "article_short": "56-1-10",
+    "reporting_basis": "第7條之1第1項第17款",
+    "reportable": true,
+    "fine": "依第56條第5項以最高額處罰；基準表：1,200",
+    "fine_min": 1200,
+    "fine_max": 1200,
+    "vehicle": null,
+    "evidence": [
+      "身障車位標誌標線入鏡",
+      "車牌清晰",
+      "無身障識別證"
+    ],
+    "common_rejections": [
+      "只拍 1 張照片且難以辨認是行駛或靜止",
+      "沒拍到標誌標線",
+      "違規時間與拍攝時間不符"
+    ],
+    "option_keywords": [
+      "佔用身障停車格",
+      "身心障礙專用停車位",
+      "身障停車位",
+      "身障"
+    ],
+    "notes": "2024 年保留的 5 項輕微違規之一。深夜勸導例外明文排除此項，不得以深夜為由免罰。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=56",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080029&flno=12",
+      "https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=33324&pid=240917"
+    ],
+    "gaps": [
+      "vehicle：報告未區分車種"
+    ]
+  },
+  {
+    "id": "double_parking",
+    "name": "併排停車",
+    "article": "第56條第2項",
+    "article_short": "56-2",
+    "reporting_basis": "第7條之1第1項第17款",
+    "reportable": true,
+    "fine": "1,800 至 3,000 元；基準表：機車 1,800、小型車 2,000、大型車 3,000",
+    "fine_min": 1800,
+    "fine_max": 3000,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "兩車併排",
+      "車牌清晰",
+      "駕駛座（辨識是停車而非臨停）"
+    ],
+    "common_rejections": [
+      "只拍 1 張照片且難以辨認是行駛或靜止",
+      "沒拍到駕駛座；駕駛座有人屬「併排臨時停車」，2024 年起已不可檢舉",
+      "違規時間與拍攝時間不符"
+    ],
+    "option_keywords": [
+      "違規併排停車",
+      "併排停車",
+      "併排"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=56",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C"
+    ],
+    "gaps": []
+  },
+  {
+    "id": "wrong_way_driving",
+    "name": "逆向行駛",
+    "article": "第45條第1項第1款",
+    "article_short": "45-1-1",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元；基準表：900",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": [
+      "車輛面對來車方向行駛的畫面",
+      "車牌清晰"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "逆向",
+      "逆向行駛",
+      "不按遵行之方向行駛"
+    ],
+    "notes": "條文用語為「不按遵行之方向行駛」。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C"
+    ],
+    "gaps": [
+      "vehicle：報告未區分車種",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "crossing_into_oncoming_lane",
+    "name": "跨越雙黃線駛入來車道（切西瓜提前左轉）",
+    "article": "第45條第1項第3款",
+    "article_short": "45-1-3",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元；基準表：機車或小型車 900、大型車 1,400",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "駛入來車道",
+      "不依規定駛入來車道",
+      "跨越雙黃線"
+    ],
+    "notes": "條文用語為「不依規定駛入來車道」。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [
+      "https://www.tad.ntpc.gov.tw/News_Detail2.aspx?entry=41354"
+    ],
+    "gaps": [
+      "evidence：報告未列專屬要件",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "driving_on_sidewalk",
+    "name": "行駛人行道",
+    "article": "第45條第1項第6款",
+    "article_short": "45-1-6",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元；基準表：600",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": [
+      "車輛在人行道上「行駛」的連續畫面",
+      "車牌清晰"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "行駛人行道",
+      "人行道"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C"
+    ],
+    "gaps": [
+      "vehicle：報告未區分車種",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "start_not_yielding",
+    "name": "起駛不讓行進中車輛與行人",
+    "article": "第45條第1項第10款",
+    "article_short": "45-1-10",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "起駛",
+      "起駛不讓",
+      "起駛前不讓行進中之車輛行人優先通行"
+    ],
+    "notes": "2023 年 6 月 30 日版起加入可檢舉清單。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "multi_lane_not_by_rules",
+    "name": "多車道不依規定",
+    "article": "第45條第1項第4款",
+    "article_short": "45-1-4",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元（第45條第1項法定範圍）；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "多車道不依規定",
+      "在多車道不依規定駕車"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "following_emergency_vehicle",
+    "name": "跟隨救護車急駛",
+    "article": "第45條第1項第11款",
+    "article_short": "45-1-11",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元（第45條第1項法定範圍）；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "跟隨救護車",
+      "尾隨消防車救護車"
+    ],
+    "notes": "2023 年 6 月 30 日版起加入可檢舉清單。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "motorcycle_wrong_lane",
+    "name": "機車不在規定車道行駛",
+    "article": "第45條第1項第13款",
+    "article_short": "45-1-13",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元（第45條第1項法定範圍）；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": "機車",
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "機車不依規定車道行駛",
+      "機車不在規定車道",
+      "機器腳踏車不在規定車道行駛"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "occupying_bicycle_lane",
+    "name": "占用自行車道",
+    "article": "第45條第1項第16款",
+    "article_short": "45-1-16",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": "600 至 1,800 元（第45條第1項法定範圍）；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "自行車道",
+      "占用自行車道",
+      "佔用自行車道"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "not_yielding_emergency_vehicle",
+    "name": "不避讓消防車、救護車等執行任務車輛",
+    "article": "第45條第2項",
+    "article_short": "45-2",
+    "reporting_basis": "第7條之1第1項第8款",
+    "reportable": true,
+    "fine": null,
+    "fine_min": null,
+    "fine_max": null,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "不避讓",
+      "消防車",
+      "救護車",
+      "執行任務車輛"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "fine：報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "illegal_overtaking",
+    "name": "違規超車（右側超車、彎道超車等）",
+    "article": "第47條第1項",
+    "article_short": "47-1",
+    "reporting_basis": "第7條之1第1項第9款",
+    "reportable": true,
+    "fine": "1,200 至 2,400 元",
+    "fine_min": 1200,
+    "fine_max": 2400,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "違規超車",
+      "超車"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "turn_lane_change_against_signs",
+    "name": "轉彎或變換車道不依標誌標線號誌（含跨雙白線變換車道、機車未兩段式左轉、直行車道左轉、禁止左轉卻左轉）",
+    "article": "第48條第2款",
+    "article_short": "48-2",
+    "reporting_basis": "第7條之1第1項第10款",
+    "reportable": true,
+    "fine": "600 至 1,800 元；基準表：600",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": [
+      "標誌或標線入鏡",
+      "變換車道或轉彎的連續畫面（跨線要拍到跨越動作）",
+      "車牌清晰",
+      "機車兩段式左轉要拍「標誌、車牌號碼及違規事實」"
+    ],
+    "common_rejections": [
+      "跨線沒拍到「跨越動作」",
+      "車牌不清"
+    ],
+    "option_keywords": [
+      "轉彎或變換車道不依標誌標線號誌",
+      "不依標誌、標線、號誌指示",
+      "兩段式左轉",
+      "跨越雙白線變換車道",
+      "禁止左轉"
+    ],
+    "notes": "有變換車道動作用第48條第2款；壓雙白線但沒變換車道用第60條第2項第3款。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=48",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C",
+      "https://app2.ntpd.gov.tw/Info/ImageReport"
+    ],
+    "gaps": [
+      "vehicle：報告未區分車種"
+    ]
+  },
+  {
+    "id": "turn_not_watching_pedestrians",
+    "name": "轉彎或變換車道不注意行人、轉彎前未減速",
+    "article": "第48條第1款",
+    "article_short": "48-1",
+    "reporting_basis": "第7條之1第1項第10款",
+    "reportable": true,
+    "fine": "600 至 1,800 元（第48條法定範圍）；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "轉彎前未減速",
+      "轉彎不注意行人",
+      "變換車道不注意行人"
+    ],
+    "notes": "2023 年 6 月 30 日版起加入可檢舉清單。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=48",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "turn_lane_rules",
+    "name": "多車道轉彎不依規定、快慢車道轉彎不依規定、直行車占用轉彎專用道",
+    "article": "第48條第4、5、7款",
+    "article_short": "48-4/5/7",
+    "reporting_basis": "第7條之1第1項第10款",
+    "reportable": true,
+    "fine": "600 至 1,800 元（第48條法定範圍）；基準表金額報告未列",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "多車道轉彎",
+      "快慢車道轉彎",
+      "轉彎專用道",
+      "直行車占用轉彎專用道"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=48",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "illegal_u_turn",
+    "name": "違規迴車（含跨越雙黃線迴轉）",
+    "article": "第49條（雙黃線迴轉為第2款）",
+    "article_short": "49",
+    "reporting_basis": "第7條之1第1項第11款",
+    "reportable": true,
+    "fine": "600 至 1,800 元；基準表（跨越雙黃線迴轉）：機車或小型車 900、大型車 1,400",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": "汽車／機車皆適用",
+    "evidence": [
+      "雙黃線入鏡",
+      "迴轉動作",
+      "車牌清晰"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "違規迴車",
+      "迴車",
+      "迴轉",
+      "跨越雙黃線迴轉"
+    ],
+    "notes": "第49條整條都在清單。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=49",
+    "references": [
+      "https://law.moj.gov.tw/LawClass/LawGetFile.ashx?FileId=0000415077&lan=C"
+    ],
+    "gaps": [
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "no_helmet",
+    "name": "機車未戴安全帽",
+    "article": "第31條第6項",
+    "article_short": "31-6",
+    "reporting_basis": "第7條之1第1項第3款",
+    "reportable": true,
+    "fine": "500 元固定",
+    "fine_min": 500,
+    "fine_max": 500,
+    "vehicle": "機車",
+    "evidence": [
+      "騎士或乘客頭部",
+      "車牌清晰"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "未戴安全帽",
+      "安全帽"
+    ],
+    "notes": "2024 年保留的 5 項輕微違規之一。",
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [
+      "https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=33324&pid=240917"
+    ],
+    "gaps": [
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "car_handheld_phone",
+    "name": "汽車駕駛手持行動電話",
+    "article": "第31條之1第1項",
+    "article_short": "31之1-1",
+    "reporting_basis": "第7條之1第1項第3款",
+    "reportable": true,
+    "fine": "3,000 元固定",
+    "fine_min": 3000,
+    "fine_max": 3000,
+    "vehicle": "汽車（機車手持手機自 2024 年 6 月 30 日起不可檢舉）",
+    "evidence": [
+      "手持手機的畫面",
+      "車牌清晰"
+    ],
+    "common_rejections": [
+      "誤把機車手持手機拿來檢舉（該項已不開放）"
+    ],
+    "option_keywords": [
+      "汽車駕駛手持行動電話",
+      "手持行動電話",
+      "行動電話",
+      "手機"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [],
+    "gaps": []
+  },
+  {
+    "id": "sign_marking_violation",
+    "name": "不遵守標誌標線號誌之指示（跨越雙白線但未變換車道、占用機車停等區等，本章無其他處罰規定時）",
+    "article": "第60條第2項第3款",
+    "article_short": "60-2-3",
+    "reporting_basis": "第7條之1第1項第18款",
+    "reportable": true,
+    "fine": "900 至 1,800 元；基準表：900",
+    "fine_min": 900,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": [
+      "輪胎壓線或車身在停等區內的畫面",
+      "標線入鏡",
+      "車牌清晰"
+    ],
+    "common_rejections": [
+      "四輪車前懸伸入機車停等區但前輪未進入者屬可勸導情形（細則第12條第1項第2款）",
+      "前懸伸越停止線但前輪未超越者屬可勸導情形（細則第12條第1項第3款）"
+    ],
+    "option_keywords": [
+      "不遵守標誌標線號誌之指示",
+      "不遵守標誌、標線、號誌",
+      "機車停等區",
+      "停等區",
+      "跨越雙白線"
+    ],
+    "notes": "車頭越過停止線但沒進路口不算闖紅燈，歸此條。有變換車道動作的跨雙白線用第48條第2款。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=60",
+    "references": [
+      "https://168.motc.gov.tw/theme/news/post/2008141414892",
+      "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080029&flno=12"
+    ],
+    "gaps": [
+      "vehicle：報告未區分車種"
+    ]
+  },
+  {
+    "id": "cargo_falling",
+    "name": "貨物滲漏、飛散、脫落、掉落、惡臭；載運人客貨物不穩妥行駛顯有危險",
+    "article": "第30條第1項第2、7款",
+    "article_short": "30-1-2/7",
+    "reporting_basis": "第7條之1第1項第1款",
+    "reportable": true,
+    "fine": "3,000 至 18,000 元",
+    "fine_min": 3000,
+    "fine_max": 18000,
+    "vehicle": null,
+    "evidence": [
+      "掉落或飛散的畫面",
+      "車牌清晰"
+    ],
+    "common_rejections": null,
+    "option_keywords": [
+      "貨物掉落",
+      "飛散",
+      "滲漏",
+      "載運不穩妥",
+      "裝載"
+    ],
+    "notes": "第7款（載運不穩妥）2023 年 6 月 30 日版起加入。",
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "vehicle_parts_falling",
+    "name": "車輛機件、設備、附著物不穩妥或脫落",
+    "article": "第30條之1第1項",
+    "article_short": "30之1-1",
+    "reporting_basis": "第7條之1第1項第2款",
+    "reportable": true,
+    "fine": "1,000 至 6,000 元",
+    "fine_min": 1000,
+    "fine_max": 6000,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "機件",
+      "附著物",
+      "脫落",
+      "設備不穩妥"
+    ],
+    "notes": "2022 年版時尚無此條，2023 年 6 月 30 日版起加入。",
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "freeway_violations",
+    "name": "高速公路、快速公路多款違規（未保持安全距離、占用路肩、龜速占用內側等）",
+    "article": "第33條第1項各款（限第7條之1所列款次）",
+    "article_short": "33-1",
+    "reporting_basis": "第7條之1第1項第4款（第33條第1項第2、3、4、6、7、9、11至15款、第4項或第92條第7項）",
+    "reportable": true,
+    "fine": "3,000 至 6,000 元",
+    "fine_min": 3000,
+    "fine_max": 6000,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "檢舉到別的機關會轉送、耗時；國道違規要向國道公路警察局檢舉"
+    ],
+    "option_keywords": [
+      "高速公路",
+      "快速公路",
+      "未保持安全距離",
+      "路肩",
+      "內側車道"
+    ],
+    "notes": "向國道公路警察局檢舉；該局系統送出後 24 小時內要完成 email 認證，檔案上限 100MB。",
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [
+      "https://wos.hpb.gov.tw/RV"
+    ],
+    "gaps": [
+      "fine：基準表金額報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列"
+    ]
+  },
+  {
+    "id": "railway_crossing",
+    "name": "平交道違規",
+    "article": "第54條",
+    "article_short": "54",
+    "reporting_basis": "第7條之1第1項第13款",
+    "reportable": true,
+    "fine": null,
+    "fine_min": null,
+    "fine_max": null,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": null,
+    "option_keywords": [
+      "平交道",
+      "鐵路平交道"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [],
+    "gaps": [
+      "fine：報告未列",
+      "vehicle：報告未區分車種",
+      "evidence：報告未列",
+      "common_rejections：報告未列"
+    ]
+  },
+  {
+    "id": "roadside_parking_red_yellow_line",
+    "name": "路邊違規停車（紅線一般路段、黃線、路口 10 公尺內、公車站 10 公尺內、消防出入口 5 公尺內、公共場所出入口與消防栓前、顯有妨礙通行）",
+    "article": "第56條第1項第1、3、4、5款；第55條第1項第2款",
+    "article_short": "56-1-1/3/4/5, 55-1-2",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "停車 600 至 1,200 元；臨時停車 300 至 600 元",
+    "fine_min": 300,
+    "fine_max": 1200,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "2024 年 6 月 30 日起不開放民眾檢舉，只能打 110 請警察到場"
+    ],
+    "option_keywords": [
+      "紅線",
+      "黃線",
+      "禁止停車",
+      "禁止臨時停車",
+      "路口違停",
+      "公車站",
+      "消防栓"
+    ],
+    "notes": "「地方政府公告開放路段可檢舉」的說法查不到法源；（推測）可能是修法討論期間的傳聞或誤解。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=56",
+    "references": [
+      "https://www.cna.com.tw/news/ahel/202406280052.aspx",
+      "https://www.ly.gov.tw/Pages/Detail.aspx?nodeid=6590&pid=219215"
+    ],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單",
+      "「地方政府公告開放路段」：查不到法源"
+    ]
+  },
+  {
+    "id": "double_temp_parking",
+    "name": "併排臨時停車",
+    "article": "第55條第1項第4款（併排部分）",
+    "article_short": "55-1-4（併排）",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "300 至 600 元",
+    "fine_min": 300,
+    "fine_max": 600,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "2024 年 6 月 30 日起不開放民眾檢舉"
+    ],
+    "option_keywords": [
+      "併排臨時停車",
+      "併排臨停"
+    ],
+    "notes": "駕駛座有人的併排屬臨時停車，不可檢舉；駕駛不在車上的併排停車（第56條第2項）才可檢舉。",
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=55",
+    "references": [
+      "https://www.cna.com.tw/news/ahel/202406280052.aspx"
+    ],
+    "gaps": [
+      "reporting_basis：2024 年起不在第7條之1清單"
+    ]
+  },
+  {
+    "id": "turning_not_yielding_straight",
+    "name": "轉彎車不讓直行車",
+    "article": "第48條第6款",
+    "article_short": "48-6",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "600 至 1,800 元",
+    "fine_min": 600,
+    "fine_max": 1800,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "不在第7條之1可檢舉清單"
+    ],
+    "option_keywords": [
+      "轉彎車不讓直行車",
+      "轉彎車未讓直行車先行"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=48",
+    "references": [],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單"
+    ]
+  },
+  {
+    "id": "motorcycle_handheld_phone",
+    "name": "機車駕駛手持行動電話",
+    "article": "第31條之1第2項",
+    "article_short": "31之1-2",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "1,200 元",
+    "fine_min": 1200,
+    "fine_max": 1200,
+    "vehicle": "機車",
+    "evidence": null,
+    "common_rejections": [
+      "2024 年 6 月 30 日起不開放民眾檢舉"
+    ],
+    "option_keywords": [
+      "機車駕駛手持行動電話",
+      "機車手持手機"
+    ],
+    "notes": "2022、2023 年版可檢舉，2024 年版移出。",
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [
+      "https://www.cna.com.tw/news/ahel/202406280052.aspx"
+    ],
+    "gaps": [
+      "reporting_basis：2024 年起不在第7條之1清單"
+    ]
+  },
+  {
+    "id": "smoking_while_driving",
+    "name": "開車抽菸影響他人",
+    "article": "第31條之1第3項",
+    "article_short": "31之1-3",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "1,200 元",
+    "fine_min": 1200,
+    "fine_max": 1200,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "2024 年 6 月 30 日起不開放民眾檢舉"
+    ],
+    "option_keywords": [
+      "抽菸",
+      "吸菸",
+      "菸"
+    ],
+    "notes": "2022、2023 年版可檢舉，2024 年版移出。",
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [
+      "https://www.cna.com.tw/news/ahel/202406280052.aspx"
+    ],
+    "gaps": [
+      "reporting_basis：2024 年起不在第7條之1清單",
+      "vehicle：報告未區分車種"
+    ]
+  },
+  {
+    "id": "branch_not_yielding_main",
+    "name": "支線不讓幹線",
+    "article": "第45條第1項第9款",
+    "article_short": "45-1-9",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": null,
+    "fine_min": null,
+    "fine_max": null,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "不在第7條之1可檢舉清單"
+    ],
+    "option_keywords": [
+      "支線不讓幹線",
+      "支線道車不讓幹線道車"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單",
+      "fine：報告未列"
+    ]
+  },
+  {
+    "id": "crossing_two_lanes",
+    "name": "任意跨越兩條車道",
+    "article": "第45條第1項第12款",
+    "article_short": "45-1-12",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": null,
+    "fine_min": null,
+    "fine_max": null,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "不在第7條之1可檢舉清單"
+    ],
+    "option_keywords": [
+      "跨越兩條車道",
+      "任意跨越兩條車道行駛"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=45",
+    "references": [],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單",
+      "fine：報告未列"
+    ]
+  },
+  {
+    "id": "speeding",
+    "name": "超速",
+    "article": "第43條第1項第2款（超速逾 40 公里）；第40條（一般超速）",
+    "article_short": "43-1-2, 40",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "第43條第1項第2款 6,000 至 36,000 元；第40條報告未列",
+    "fine_min": null,
+    "fine_max": null,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "不在第7條之1可檢舉清單"
+    ],
+    "option_keywords": [
+      "超速",
+      "超過規定之最高時速"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=43",
+    "references": [],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單",
+      "fine：第40條金額報告未列"
+    ]
+  },
+  {
+    "id": "noise_muffler",
+    "name": "拆除消音器或以其他方式造成噪音",
+    "article": "第43條第1項第5款",
+    "article_short": "43-1-5",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "6,000 至 36,000 元",
+    "fine_min": 6000,
+    "fine_max": 36000,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "不在第7條之1可檢舉清單"
+    ],
+    "option_keywords": [
+      "消音器",
+      "噪音"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=43",
+    "references": [],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單"
+    ]
+  },
+  {
+    "id": "freeway_reverse_wrong_way",
+    "name": "高速公路或快速公路迴車、倒車、逆向行駛",
+    "article": "第43條第1項第6款",
+    "article_short": "43-1-6",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": "6,000 至 36,000 元",
+    "fine_min": 6000,
+    "fine_max": 36000,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "不在第7條之1可檢舉清單"
+    ],
+    "option_keywords": [
+      "高速公路逆向",
+      "高速公路迴車",
+      "高速公路倒車"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&flno=43",
+    "references": [],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單"
+    ]
+  },
+  {
+    "id": "horn_misuse",
+    "name": "按喇叭（不依規定使用喇叭）",
+    "article": "第41條",
+    "article_short": "41",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": null,
+    "fine_min": null,
+    "fine_max": null,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "不在第7條之1可檢舉清單"
+    ],
+    "option_keywords": [
+      "喇叭",
+      "不依規定使用喇叭"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [],
+    "gaps": [
+      "reporting_basis：不在第7條之1清單",
+      "fine：報告未列"
+    ]
+  },
+  {
+    "id": "improper_reversing",
+    "name": "倒車未顯示倒車燈、不注意行人、大型車無人指引",
+    "article": "第50條第2、3款",
+    "article_short": "50-2/3",
+    "reporting_basis": null,
+    "reportable": false,
+    "fine": null,
+    "fine_min": null,
+    "fine_max": null,
+    "vehicle": null,
+    "evidence": null,
+    "common_rejections": [
+      "2024 年 6 月 30 日起不開放民眾檢舉（2023 年版曾開放）"
+    ],
+    "option_keywords": [
+      "倒車",
+      "倒車燈",
+      "倒車不注意行人"
+    ],
+    "notes": null,
+    "source": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=K0040012",
+    "references": [],
+    "gaps": [
+      "reporting_basis：2024 年起不在第7條之1清單",
+      "fine：報告未列"
+    ]
+  }
+]

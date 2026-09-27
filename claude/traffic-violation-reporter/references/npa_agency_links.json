@@ -1,0 +1,190 @@
+{
+  "source": "內政部警政署交通組「各警察機關檢舉交通違規網頁或信箱」開放資料",
+  "source_url": "https://www.npa.gov.tw/ch/app/openData/artwebsite/data?module=artwebsite&serno=dfdca94a-8332-466c-b912-7ceef7ab30c0&type=json",
+  "page_url": "https://www.npa.gov.tw/ch/app/artwebsite/view?module=artwebsite&id=4432&serno=dfdca94a-8332-466c-b912-7ceef7ab30c0",
+  "npa_update_date": "115-07-23",
+  "fetched_on": "2026-09-26",
+  "note": "各縣市入口網址以此表為準；縣市欄為 null 的是署屬機關，管轄範圍見 jurisdiction。國道、園區、機場、港區、平交道的違規不歸縣市警察局。",
+  "agencies": [
+    {
+      "agency": "臺北市政府警察局",
+      "county": "臺北市",
+      "jurisdiction": null,
+      "url": "https://prsweb.tcpd.gov.tw/index.php?catid=10"
+    },
+    {
+      "agency": "新北市政府警察局",
+      "county": "新北市",
+      "jurisdiction": null,
+      "url": "https://www.traffic.police.ntpc.gov.tw/mp-27.html"
+    },
+    {
+      "agency": "桃園市政府警察局",
+      "county": "桃園市",
+      "jurisdiction": null,
+      "url": "https://www.typd.gov.tw/index.php?catid=33"
+    },
+    {
+      "agency": "臺中市政府警察局",
+      "county": "臺中市",
+      "jurisdiction": null,
+      "url": "https://suggest.police.taichung.gov.tw/traffic/index.jsp"
+    },
+    {
+      "agency": "臺南市政府警察局",
+      "county": "臺南市",
+      "jurisdiction": null,
+      "url": "https://www.tnpd.gov.tw/TrafficMailbox/Index/b591d651-e97c-70ae-1e46-b8b0a7d23064"
+    },
+    {
+      "agency": "高雄市政府警察局",
+      "county": "高雄市",
+      "jurisdiction": null,
+      "url": "https://policemail.kcg.gov.tw/Index.aspx"
+    },
+    {
+      "agency": "航空警察局",
+      "county": null,
+      "jurisdiction": "機場航廈、機場周邊道路",
+      "url": "https://www.apb.npa.gov.tw/ch/app/folder/2361"
+    },
+    {
+      "agency": "國道公路警察局",
+      "county": null,
+      "jurisdiction": "國道（國1、國3 等）與匝道",
+      "url": "https://wos.hpb.gov.tw/RV"
+    },
+    {
+      "agency": "鐵路警察局",
+      "county": null,
+      "jurisdiction": "鐵路平交道、車站周邊鐵路用地",
+      "url": "https://www.rpb.npa.gov.tw/ch/mailbox/mailtraffic/mailtraffic?module=mailtraffic&id=18871"
+    },
+    {
+      "agency": "保安警察第二總隊",
+      "county": null,
+      "jurisdiction": "新竹科學園區（含竹南、龍潭、銅鑼、宜蘭園區、竹北生醫園區）園區道路",
+      "url": "https://www.2spc.npa.gov.tw/ch/mailbox/mailtraffic/mailtraffic?module=mailtraffic&id=18551"
+    },
+    {
+      "agency": "基隆港務警察總隊",
+      "county": null,
+      "jurisdiction": "基隆港區",
+      "url": "https://www.klhpd.npa.gov.tw/ch/app/folder/3102"
+    },
+    {
+      "agency": "臺中港務警察總隊",
+      "county": null,
+      "jurisdiction": "臺中港區",
+      "url": "https://www.tchpd.npa.gov.tw/ch/app/folder/3108"
+    },
+    {
+      "agency": "高雄港務警察總隊",
+      "county": null,
+      "jurisdiction": "高雄港區",
+      "url": "https://www.khhpd.npa.gov.tw/ch/app/folder/4505"
+    },
+    {
+      "agency": "花蓮港務警察總隊",
+      "county": null,
+      "jurisdiction": "花蓮港區",
+      "url": "https://www.hlhpd.npa.gov.tw/ch/app/folder/3116"
+    },
+    {
+      "agency": "基隆市警察局",
+      "county": "基隆市",
+      "jurisdiction": null,
+      "url": "https://www.klg.gov.tw/cht/index.php?code=list&ids=65"
+    },
+    {
+      "agency": "新竹市警察局",
+      "county": "新竹市",
+      "jurisdiction": null,
+      "url": "https://tra.hccp.gov.tw/hsin/cases/statement"
+    },
+    {
+      "agency": "嘉義市政府警察局",
+      "county": "嘉義市",
+      "jurisdiction": null,
+      "url": "https://trn.ccpb.gov.tw/"
+    },
+    {
+      "agency": "新竹縣政府警察局",
+      "county": "新竹縣",
+      "jurisdiction": null,
+      "url": "https://traffic.hchpb.gov.tw/"
+    },
+    {
+      "agency": "苗栗縣警察局",
+      "county": "苗栗縣",
+      "jurisdiction": null,
+      "url": "https://trv.mpb.gov.tw/Home/Report/"
+    },
+    {
+      "agency": "彰化縣警察局",
+      "county": "彰化縣",
+      "jurisdiction": null,
+      "url": "https://www.chpb.gov.tw/ViolatePetition/C005400"
+    },
+    {
+      "agency": "南投縣政府警察局",
+      "county": "南投縣",
+      "jurisdiction": null,
+      "url": "https://jiaowei.ncpd.gov.tw/sc11/rwd/rincase1.aspx"
+    },
+    {
+      "agency": "雲林縣警察局",
+      "county": "雲林縣",
+      "jurisdiction": null,
+      "url": "https://trv.ylhpb.gov.tw/Home/Report/"
+    },
+    {
+      "agency": "嘉義縣警察局",
+      "county": "嘉義縣",
+      "jurisdiction": null,
+      "url": "https://www.cypd.gov.tw/TrafficMailbox/f21e7f75-04e2-082d-d2ae-1d038340ed7b"
+    },
+    {
+      "agency": "屏東縣政府警察局",
+      "county": "屏東縣",
+      "jurisdiction": null,
+      "url": "https://trafficmailbox.ptpolice.gov.tw/"
+    },
+    {
+      "agency": "宜蘭縣政府警察局",
+      "county": "宜蘭縣",
+      "jurisdiction": null,
+      "url": "https://ppl.report.ilcpb.gov.tw/index.php?catid=11"
+    },
+    {
+      "agency": "花蓮縣警察局",
+      "county": "花蓮縣",
+      "jurisdiction": null,
+      "url": "http://hlpb.twgov.mobi/order/index.php"
+    },
+    {
+      "agency": "臺東縣警察局",
+      "county": "臺東縣",
+      "jurisdiction": null,
+      "url": "https://www.ttcpb.gov.tw/chinese/home.jsp?mserno=201105170007&serno=201108090002&contlink=ap/mail1.jsp"
+    },
+    {
+      "agency": "澎湖縣政府警察局",
+      "county": "澎湖縣",
+      "jurisdiction": null,
+      "url": "https://www.phpb.gov.tw/home.jsp?id=404"
+    },
+    {
+      "agency": "金門縣警察局",
+      "county": "金門縣",
+      "jurisdiction": null,
+      "url": "https://kpb.kinmen.gov.tw/Content_List.aspx?n=40C0F63E039C5390"
+    },
+    {
+      "agency": "連江縣警察局",
+      "county": "連江縣",
+      "jurisdiction": null,
+      "url": "https://www.lchpd.gov.tw/Chhtml/content/2668"
+    }
+  ]
+}
