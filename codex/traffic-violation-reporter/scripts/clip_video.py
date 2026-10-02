@@ -16,6 +16,7 @@
 - ⛔ 不縮小解析度：4K 縮成 1080p 車牌會糊到讀不出來（2026-10-02 實測）。預設保留原解析度，只靠碼率控制檔案大小。
 - 不裁切時先嘗試不重新編碼（-c copy）；有裁切或超過大小上限才重新編碼（兩階段編碼，同樣大小畫質最好）。
 - 一律輸出 H.264 + AAC 的 .mp4，所有縣市系統都收。
+- 重新編碼後把原始檔的拍攝時間等中繼資料抄回去（新竹縣等明文要求「剪輯轉檔仍須保留原始檔 EXIF」）。
 --crop 為 x,y,w,h，皆為 0 到 1 的比例（以原始畫面為準），左上角為原點。
 """
 import argparse, json, pathlib, subprocess, sys, tempfile
@@ -38,6 +39,16 @@ def run(cmd):
         sys.exit("ffmpeg 失敗：\n" + r.stderr[-2000:])
 
 def size_mb(p): return pathlib.Path(p).stat().st_size / 1024 / 1024
+
+def copy_dates(src, out):
+    """把原始檔的拍攝時間等中繼資料抄到剪輯檔（多數縣市要求剪輯轉檔後仍保留原始檔的 EXIF／建立時間）。
+    只改中繼資料、不動畫面；沒有 exiftool 就略過（ffmpeg 已帶上 creation_time）。"""
+    import shutil
+    if not shutil.which("exiftool"): return
+    subprocess.run(["exiftool", "-q", "-overwrite_original", "-tagsFromFile", str(src),
+                    "-QuickTime:CreateDate", "-QuickTime:ModifyDate", "-Track1:TrackCreateDate", "-Track1:TrackModifyDate",
+                    "-Track1:MediaCreateDate", "-Track1:MediaModifyDate", "-Track2:all", "-Make", "-Model", str(out)],
+                   capture_output=True)
 
 def crop_px(crop, W, H):
     """比例 → 偶數像素的 ffmpeg crop 參數 w:h:x:y"""
@@ -116,11 +127,13 @@ def main():
                      "-passlogfile", passlog]
             run(["ffmpeg", "-y", *common, *vargs, "-pass", "1", "-an", "-f", "mp4", "/dev/null"])
             run(["ffmpeg", "-y", *common, "-map", "0:a?", *vargs, "-pass", "2", "-c:a", "aac", "-b:a", "96k",
+                 "-map_metadata", "0", "-map_metadata:s:v", "0:s:v", "-map_metadata:s:a", "0:s:a",
                  "-movflags", "+faststart", str(out)])
             mode = f"reencode@{target_kbps}k" + (f" crop={box[0]}x{box[1]}" if box else "")
             if size_mb(out) <= a.max_mb or attempt >= 4: break
             target_kbps = int(target_kbps * 0.85)
         for f in pathlib.Path(passlog).parent.glob(pathlib.Path(passlog).name + "*"): f.unlink()
+    copy_dates(a.src, out)
     ok = size_mb(out) <= a.max_mb
     print(json.dumps({"out": str(out), "start_sec": round(start, 2), "end_sec": round(end, 2), "length_sec": round(length, 2),
                       "source_size": f"{W}x{H}", "crop_px": "{}:{}:{}:{}".format(*box) if box else None,
