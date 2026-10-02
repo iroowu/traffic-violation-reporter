@@ -3,6 +3,14 @@
 
 用法：
   python3 build_case.py 原始.MP4 --at 00:01:32 [--before 8 --after 8] [--county 新竹縣] [--out-root ~/交通檢舉]
+  python3 build_case.py 原始.MP4 --at 00:01:56 --before 12 --after 4 --county 新竹縣 \
+      --crop 0,0.4,0.6,0.6 --photos 114.4,116.3 --plate-photo 107.3   # 裁切放大車牌＋違規截圖＋最清楚車牌截圖
+
+--crop 是裁切範圍 x,y,w,h（0 到 1 比例），以「車牌放大」為主，但必須保留號誌與停止線、左下日期時間車速水印、地點環境。
+       先用 clip_video.py --preview 逐秒確認裁切框沒有切掉這三樣，再正式產出（2026-10-02 使用者定案）。
+--photos 是原始影片裡的秒數（逗號分隔），各抽一張同樣裁切的原始解析度截圖 photo1.jpg…，與影片一起上傳當補充證據。
+--plate-photo 是「行進中車牌拍得最清楚」那一格的秒數（用 best_plate_frame.py 找），輸出 plate.jpg。
+       違規那一秒的車牌通常不清楚，⛔ 不能只附違規時間點的截圖，一定要另附這張（2026-10-02 使用者定案）。
 
 --at 是「違規發生那一刻」在影片裡的時間點（使用者按事件鍵的那一秒，或看畫面找到的那一秒）。
 --county 手動指定縣市（GPS 讀不到時用）。
@@ -50,6 +58,9 @@ def main():
     ap.add_argument("--before", type=float, default=8); ap.add_argument("--after", type=float, default=8)
     ap.add_argument("--county"); ap.add_argument("--out-root", default=str(pathlib.Path.home() / "交通檢舉"))
     ap.add_argument("--plate-crop", default="0.35,0.45,0.30,0.30", help="車牌放大區 x,y,w,h 比例，預設畫面中央偏下")
+    ap.add_argument("--crop", help="檢舉影片的裁切範圍 x,y,w,h 比例（放大車牌用）；省略＝不裁切")
+    ap.add_argument("--photos", help="證據截圖的原始影片秒數，逗號分隔，例 114.4,116.3")
+    ap.add_argument("--plate-photo", type=float, help="行進中車牌最清楚那一格的原始影片秒數（best_plate_frame.py 找出），輸出 plate.jpg")
     a = ap.parse_args()
     src = pathlib.Path(a.src).expanduser().resolve()
     if not src.exists(): sys.exit(f"找不到影片：{src}")
@@ -81,8 +92,25 @@ def main():
     gps_path.rename(case_dir / "gps.json"); gps_path = case_dir / "gps.json"
     # 5. 剪片壓縮
     lim = county_limits(county)
-    clip = run_json([HERE / "clip_video.py", str(src), "--center", a.at, "--before", str(a.before), "--after", str(a.after),
-                     "--max-mb", str(lim["max_mb"]), "--out", str(case_dir / "clip.mp4")])
+    photos = [float(x) for x in a.photos.split(",")] if a.photos else []
+    # 截圖約各 1 MB，先從影片的額度裡扣掉，讓影片＋截圖合計不超過上限
+    n_stills = len(photos) + (1 if a.plate_photo is not None else 0)
+    clip_mb = max(5, lim["max_mb"] - 1.2 * n_stills)
+    clip_args = [HERE / "clip_video.py", str(src), "--center", a.at, "--before", str(a.before), "--after", str(a.after),
+                 "--max-mb", str(clip_mb), "--out", str(case_dir / "clip.mp4")]
+    if a.crop: clip_args += ["--crop", a.crop]
+    clip = run_json(clip_args)
+    # 5b. 證據截圖：原始解析度、同樣裁切、不縮放
+    vf = []
+    if a.crop and clip.get("crop_px"): vf = ["-vf", "crop=" + clip["crop_px"]]
+    for i, t in enumerate(photos, 1):
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{t:.3f}", "-i", str(src), "-frames:v", "1", *vf, "-q:v", "2",
+                        str(case_dir / f"photo{i}.jpg")], capture_output=True)
+    if a.plate_photo is not None:
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{a.plate_photo:.3f}", "-i", str(src), "-frames:v", "1", *vf, "-q:v", "2",
+                        str(case_dir / "plate.jpg")], capture_output=True)
+    if lim.get("max_files") and 1 + n_stills > lim["max_files"]:
+        print(f"⚠️ 該縣市最多 {lim['max_files']} 個檔，現在有 {1 + n_stills} 個（影片＋截圖），上傳時依「影片＞車牌截圖＞違規截圖」的順序取捨", file=sys.stderr)
     # 6. 抽畫面：片段內每秒一張，另抽事件那一刻與前後 0.5 秒的車牌放大圖
     frames = case_dir / "frames"
     subprocess.run([PY, HERE / "extract_frames.py", str(case_dir / "clip.mp4"), "--out-dir", str(frames), "--fps", "1"], capture_output=True)
@@ -97,7 +125,7 @@ def main():
             "county_confidence": (loc or {}).get("at_event", {}).get("confidence") if loc else ("manual" if a.county else None),
             "location": geo if geo and not geo.get("error") else None,
             "coords_at_event": (gps.get("at") or {}) if has_gps else None,
-            "clip": clip, "limits": lim, "frames_dir": str(frames), "created": datetime.datetime.now().isoformat(timespec="seconds"),
+            "clip": clip, "crop": a.crop, "photos": [f"photo{i}.jpg @ {t}s" for i, t in enumerate(photos, 1)] + ([f"plate.jpg @ {a.plate_photo}s（最清楚車牌）"] if a.plate_photo is not None else []), "limits": lim, "frames_dir": str(frames), "created": datetime.datetime.now().isoformat(timespec="seconds"),
             "violation": {"type": None, "article": None, "plate": None, "vehicle_type": None, "description": None},
             "notes": [n for n in [gps.get("note"), (loc or {}).get("note"), (geo or {}).get("error")] if n]}
     (case_dir / "case.json").write_text(json.dumps(case, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -6,9 +6,10 @@
 
 1. 從影片的 GPS 找出違規發生在哪個縣市、哪個行政區、哪條路（離線判定，內建內政部縣市與鄉鎮界線）。
 2. 看畫面判讀違規事實與車牌，對出道路交通管理處罰條例的條號。
-3. 把影片剪成違規前後十幾秒，壓到該縣市檢舉網站收得下的大小。
-4. 打開該縣市警察局的檢舉網站，把該填的欄位填好。
-5. 停在「身分證字號」與「驗證碼」那一格，換你接手。
+3. 把影片剪成違規前後十幾秒，**裁切放大車牌**（保留號誌、停止線、左下的日期時間車速水印與路口環境，其餘裁掉；不縮小解析度），壓到該縣市檢舉網站收得下的大小。
+4. 抽出證據截圖：違規那幾秒的截圖，**加上一張行進中車牌拍得最清楚的截圖**（違規那一秒車牌常常不清楚，審核員要能從一張圖讀出完整車號）。
+5. 打開該縣市警察局的檢舉網站，把該填的欄位填好。
+6. 停在「身分證字號」與「驗證碼」那一格，換你接手。
 
 你只做三件事：核對它的判讀、自己輸入身分證字號與驗證碼、自己按送出。
 
@@ -21,7 +22,7 @@
 | `dist/traffic-violation-reporter.skill` | Claude 版打包好的安裝檔，上傳 claude.ai 用 |
 | `tools/build_codex.py` | 從 Claude 版重建 Codex 版的腳本 |
 
-技能包裡面有：九支 Python 腳本（GPS 抽取、縣市與鄉鎮定位、座標轉路名、剪片壓縮、抽畫面、法條比對、整案打包）、22 縣市檢舉網站規格與操作小抄、48 項可檢舉項目與法條對照、內政部縣市與鄉鎮界線（簡化版）、警政署官方各機關檢舉網址總表。全部自帶，不需要網路以外的任何服務。
+技能包裡面有：九支 Python 腳本（GPS 抽取、縣市與鄉鎮定位、座標轉路名、剪片裁切壓縮、抽畫面、找最清楚車牌、法條比對、整案打包）、22 縣市檢舉網站規格與操作小抄、48 項可檢舉項目與法條對照、內政部縣市與鄉鎮界線（簡化版）、警政署官方各機關檢舉網址總表。全部自帶，不需要網路以外的任何服務。
 
 ## 使用前要有的東西
 
@@ -30,7 +31,7 @@
 | 付費版 Claude（Pro 以上）或 Codex | 免費版 Claude 沒有技能包功能，也不能用 Claude Code 與 Claude in Chrome。 |
 | Claude Code、Claude 桌面 App 或 Codex 桌面 App | 剪片、讀 GPS 要在你的電腦上跑。 |
 | Chrome 加 Claude in Chrome 擴充功能（Claude 版） | 自動填檢舉網站用。沒有的話，它會把該填的值整理成一張表讓你自己貼。 |
-| ffmpeg 與 exiftool | 免費開源。Mac：`brew install ffmpeg exiftool`。Windows：`winget install ffmpeg`，exiftool 到 exiftool.org 下載。第一次用時會自動檢查。 |
+| ffmpeg、exiftool、numpy、Pillow | 免費開源。numpy 與 Pillow：`python3 -m pip install --user numpy pillow`（找最清楚車牌、裁切預覽用）。Mac：`brew install ffmpeg exiftool`。Windows：`winget install ffmpeg`，exiftool 到 exiftool.org 下載。第一次用時會自動檢查。 |
 
 ## 安裝
 

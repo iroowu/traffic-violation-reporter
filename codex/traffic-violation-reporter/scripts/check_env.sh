@@ -29,6 +29,9 @@ echo "== Python 套件（只用標準庫，不需另外安裝）=="
 python3 - <<'PY' 2>/dev/null && echo "  ✅ python3 標準庫可用" || { echo "  ❌ python3 執行失敗"; exit 1; }
 import json, math, subprocess, pathlib, datetime, argparse, statistics
 PY
+python3 - <<'PY' 2>/dev/null && echo "  ✅ numpy＋Pillow 可用（找最清楚車牌、裁切預覽圖用）" || echo "  ⚠️ 缺 numpy 或 Pillow：找最清楚車牌（best_plate_frame.py）與裁切預覽（clip_video.py --preview）會無法執行。安裝：python3 -m pip install --user numpy pillow"
+import numpy, PIL
+PY
 echo
 echo "== 縣市邊界資料 =="
 here="$(cd "$(dirname "$0")/.." && pwd)"
